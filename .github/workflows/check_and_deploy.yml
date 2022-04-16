@@ -11,7 +11,7 @@ jobs:
     needs: [ unit_tests, android_tests ]
     runs-on: ubuntu-latest
     steps:
-      - name: Change wrapper permissions
+      - name: Make gradlew executable
         run: chmod +x ./gradlew
       # 1
       - name: Checkout code
